@@ -1,0 +1,246 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(31, 12, 12);
+    color: rgb(49, 231, 49);
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #8845f5;
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-bottom: 15%;
+    z-index: 9999;
+}
+
+.logo{
+    letter-spacing: 5px;
+    font-size: 50px;
+       
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo h4{
+    background-color: #8845f5;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    background-color: #8845f5;
+}
+
+.nav-links li{
+    list-style: none;
+    background-color: #8845f5;
+    
+}
+
+.nav-links a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 12px;
+    background-color: #8845f5;
+}
+
+.lines{
+    background-color: #8845f5;
+    display: none;
+    cursor: pointer;
+}
+
+.lines div{
+    width: 25px;
+    height: 3px;
+    background-color: #150050;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    body{
+       overflow-x: hidden;
+    }
+    
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #8845f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 9999;
+    }
+
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .lines{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }to{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+
+.toggleLines .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggleLines .line2{
+    opacity: 0;
+}
+
+.toggleLines .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.select{
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 25%;
+    margin-right: 25%;
+    align-items: center;
+}
+
+.select h2{
+    text-align: center
+}
+
+.ttt{
+    height: 30vh;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 10vh;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid rgb(49, 231, 49);;
+}
+
+.ttt p{
+    margin-top: 10%;
+}
+
+.rps{
+    height: 30vh;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 10vh;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid rgb(49, 231, 49);
+}
+
+.rps p{
+    margin-top: 10%;
+}
+
+.pagegrid button{
+        background-color: black;
+        color: rgb(49, 231, 49);
+        padding: 8px;
+        border: none;
+        font-size: 20px;
+        margin-left: 1em;
+        cursor: pointer;
+}   
+.pagegrid button:hover{
+        background-color: rgb(49, 231, 49);
+        color: black;
+}
+
+.about{
+    height: 30vh;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 10vh;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid rgb(49, 231, 49);
+}
+
+#abt{
+    font-size: 20px;
+    margin-top: 8%;
+}
+
+.footer {
+    bottom: 0;
+    height: 35px;
+    left: 0;
+    width: 100%;
+    margin-top: 10%;
+    background-color: #8845f5;
+    
+}
+
+.footer p, .footer footer, .footer p b{
+    background-color: #8845f5;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    padding: 1px;
+} 
+
+footer a:hover{
+    text-decoration: none;
+    color:black;
+}
+
+
+.heart{
+    width:2%;
+    background-color: #8845f5;
+}
+
+.ft-img{
+    width: 1.5%;
+    background-color: #8845f5;
+}

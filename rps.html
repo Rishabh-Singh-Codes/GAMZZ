@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rpsstyles.css">
+
+    <title>GAMZ</title>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <h4>GAMZ</h4>
+            </a>
+
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tictactoe.html">Tic-Tac-Toe</a></li>
+            <li><a href="rps.html">Rock-Paper-Scissor</a></li>
+        </ul>
+        <div class="lines">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="select">
+        <h2>Rock - Paper - Scissor</h2>
+    </div>
+
+    <div class="rpsgrid">
+        <section class="title">
+            <h4>Play a simple game of Rock, Paper and Scissor against computer and try your luck!</h4>
+        </section>
+        <div class="container">
+            <div class="scores">
+                <p>You: <span id="user_score">0</span></p>
+                <p>Computer: <span id="computer_score">0</span></p>
+
+            </div>
+            <div class="weapons">
+                <button onclick="checker('rock')">
+                    <i class="far fa-hand-rock"></i>
+                </button>
+                <button onclick="checker('paper')">
+                    <i class="far fa-hand-paper"></i>
+                </button>
+                <button onclick="checker('scissor')">
+                    <i class="far fa-hand-scissors"></i>
+                </button>
+            </div>
+
+            <div class="details">
+                <p id="user_choice"></p>
+                <p id="comp_choice"></p>
+                <p id="result"></p>
+                <a href="rps.html"><button id="reset">Reset</button></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <footer>
+            <p>Made with <img src="Images/hart.gif" class="heart"> by <a
+                    href="https://www.linkedin.com/in/rishabh8singh/"><b>Rishabh Singh</b></a>||<a
+                    href="https://www.linkedin.com/in/rishabh8singh/"><img src="images/linkedIn.png"
+                        class="ft-img"></a>||
+                <a href="https://github.com/Rishabh-Singh-Codes?tab=repositories"><img src="images/github.png"
+                        class="ft-img" alt="github"></a>
+            </p>
+        </footer>
+    </div>
+
+
+    <script src="navi.js"></script>
+    <script src="rps.js"></script>
+</body>
+
+</html>
