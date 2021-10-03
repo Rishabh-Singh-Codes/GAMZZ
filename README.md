@@ -1,11 +1,11 @@
-# GAMZZ
+# GAMZZ :video_game:
 
 ![GAMZ_fav](https://user-images.githubusercontent.com/86565216/134817103-5452a4db-2487-4317-950d-22f3371840ac.png)
 
 
 The website provides some of the classic games like Rock - Paper - Scissors and Tic - Tac - Toe. These games tests your skill and luck.
 
-## Website Overlay
+## Website Overlay 	:computer:
 ### Home
 When the site is loaded first the following home screen appears:
 
@@ -34,12 +34,17 @@ The user selects one out of three options and computer selects one option random
 ### Navigation bar & Footer
 Navigation bar slides in from the right incase of small screen devices. The footer provides developer details and social media links.
 
-## Technology Stack
+## Technology Stack :electron:
 This site is made using following tech stacks:
 * HTML
 * CSS
 * JavaScript
 
-## Project Link
+## Project Link :link:
+The project is hosted through Netlify and can be accessed through:
 https://gamzz.netlify.app/
+
+## Developer 	:man_technologist:
+Rishabh Singh : 
+https://www.linkedin.com/in/rishabh8singh/
 
